@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/home_nav"
+    android:title="Home"
+    android:enabled="true"
+    app:showAsAction="withText"
+    android:icon="@drawable/baseline_home_24"
+    />
+    <item
+        android:id="@+id/about_nav"
+        android:title="My Order"
+        app:showAsAction="withText"
+        android:enabled="true"
+        android:icon="@drawable/order"/>
+<!--        android:icon="@drawable/baseline_article_24"-->
+        />
+<!--    <item-->
+<!--        android:id="@+id/whybest_nav"-->
+<!--        android:title="Why Best"-->
+<!--        app:showAsAction="withText"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/baseline_best_24"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/contact_nav"
+        android:title="Notification"
+        app:showAsAction="withText"
+        android:icon="@drawable/baseline_notifications_active_24"/>
+<!--        android:icon="@drawable/baseline_contact_phone_24"-->
+        />
+    <item
+        android:id="@+id/account_nav"
+        android:title="Immediat"
+        app:showAsAction="withText"
+        android:icon="@drawable/messenger"
+
+        />
+</menu>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RoWaterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarrowater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar_roWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="RO/Water Service"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/nested"-->
+<!--        android:layout_below="@+id/appbarrowater"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:outlineProvider="none"-->
+<!--                android:elevation="15dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="4"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:src="@drawable/panibottol"/>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_weight="1">-->
+<!--                            <TextView-->
+<!--                                android:id="@+id/txt_NormalWaterName"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Normal Water"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textColor="@color/black"/>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_NormwaterLtr"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="20 LTR"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:textColor="#3A3939"-->
+<!--                                    android:textSize="12sp"/>-->
+<!--                            </LinearLayout>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="20dp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txtcutprise1"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="₹40"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:textSize="12sp"-->
+<!--                                    />-->
+<!--                                <LinearLayout-->
+<!--                                    android:id="@+id/linearNormWaterAddCart"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:paddingStart="20dp"-->
+<!--                                    android:paddingEnd="20dp"-->
+<!--                                    android:paddingTop="3dp"-->
+<!--                                    android:paddingBottom="3dp"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:background="@drawable/linear_background"-->
+<!--                                    android:orientation="horizontal">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="14dp"-->
+<!--                                        android:layout_height="14dp"-->
+<!--                                        android:src="@drawable/baseline_add_24"/>-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:textSize="14dp"-->
+<!--                                        android:textColor="@color/logoColor"-->
+<!--                                        android:text="Add"/>-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="₹ 10 off using BW Cash"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:textSize="10sp"-->
+<!--                                android:textColor="#3BBC7A"/>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:orientation="horizontal">-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textColor="#3A3939"-->
+<!--                                    android:textSize="12sp"-->
+<!--                                    android:text="Get in"/>-->
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_NormWaterprise"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:layout_marginStart="10dp"-->
+<!--                                    android:text="30"/>-->
+<!--                            </LinearLayout>-->
+
+
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="#F8F5F5" />-->
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:outlineProvider="none"-->
+<!--                android:elevation="15dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                app:cardElevation="3dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="4"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:scaleType="fitXY"-->
+<!--                            android:src="@drawable/panibottol"/>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_weight="1">-->
+<!--                            <TextView-->
+<!--                                android:id="@+id/txt_ColdWaterName"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Cold Water"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textColor="@color/black"/>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_ColdwaterLtr"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="20 LTR"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:textColor="#3A3939"-->
+<!--                                    android:textSize="12sp"/>-->
+<!--                            </LinearLayout>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="20dp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txtcutprise2"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="₹40"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:textSize="12sp"-->
+<!--                                    />-->
+<!--                                <LinearLayout-->
+<!--                                    android:id="@+id/linearColdWaterAddCart"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:paddingStart="20dp"-->
+<!--                                    android:paddingEnd="20dp"-->
+<!--                                    android:paddingTop="3dp"-->
+<!--                                    android:paddingBottom="3dp"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:background="@drawable/linear_background"-->
+<!--                                    android:orientation="horizontal">-->
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="14dp"-->
+<!--                                        android:layout_height="14dp"-->
+<!--                                        android:src="@drawable/baseline_add_24"/>-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:text="Add"-->
+<!--                                        android:textColor="@color/logoColor"-->
+<!--                                        android:textSize="12dp" />-->
+<!--                                </LinearLayout>-->
+
+<!--                            </LinearLayout>-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="₹ 10 off using BW Cash"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:textSize="10sp"-->
+<!--                                android:textColor="#3BBC7A"/>-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:orientation="horizontal">-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textColor="#3A3939"-->
+<!--                                    android:textSize="12sp"-->
+<!--                                    android:text="Get in"/>-->
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_ColdWaterprise"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="14sp"-->
+<!--                                    android:layout_marginStart="10dp"-->
+<!--                                    android:text="30"/>-->
+<!--                            </LinearLayout>-->
+
+
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <View-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="#F8F5F5" />-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/appbarrowater"/>
+
+
+
+
+</RelativeLayout>

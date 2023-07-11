@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.HomeTutorServiceActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarhometutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar_hometutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Home Tutors Near Me"
+            app:menu="@menu/tutorservice_menu"
+            app:titleTextColor="@color/white">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarhometutor"
+        android:elevation="15dp"
+        app:cardElevation="3dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#005D79"
+        app:cardCornerRadius="10dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="15dp"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Looking for Home Tutors?"
+                   android:textSize="16dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/white"/>
+               <RatingBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   style="?android:attr/ratingBarStyleSmall"
+                   android:rating="5"
+                   android:layout_marginTop="10dp"
+                   android:progressTint="@color/logoColor"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAllCaps="false"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:text="Get Best Deal"/>
+           </LinearLayout>
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:scaleType="fitXY"
+               android:layout_marginRight="10dp"
+               android:src="@drawable/teacher"/>
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+       app:tabRippleColor="@color/logoColor"
+        android:layout_below="@id/card">
+<com.google.android.material.tabs.TabItem
+    android:id="@+id/tabitem1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Top Rated"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JD Verified"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jd Trust"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quik Response"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Class"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabitem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>

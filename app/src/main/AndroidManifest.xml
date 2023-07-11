@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KoiBandaApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.ActivateWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DeliverDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RoWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NotificationPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.YourOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ManagePaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WalletDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MyAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AllServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddNewAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MyAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhyBestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HowWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ElectricianServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomePaintingServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeMaidServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.YogaTeacherServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CookServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarpentryServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DanceTeacherServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PlumbingServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.GymTrainnerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeTutorServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ResetPswdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EnterOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ForgetPswdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activities.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
